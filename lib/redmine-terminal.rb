@@ -4,8 +4,11 @@ module RedmineTerminal
     require 'terminal-table'
     require 'yaml'
 
-    require_relative 'redmine-terminal/config'
-    require_relative 'redmine-terminal/command'
-    require_relative 'redmine-terminal/command/issues'
-    require_relative 'redmine-terminal/command/projects'
+    %w[
+        redmine-terminal/config
+        redmine-terminal/command
+        redmine-terminal/command/issues
+        redmine-terminal/command/projects
+        redmine-terminal/command/users
+    ].each {|file| require_relative(file)}
 end

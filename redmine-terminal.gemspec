@@ -13,6 +13,7 @@ Gem::Specification.new do |s|
                       lib/redmine-terminal/command
                       lib/redmine-terminal/command/issues
                       lib/redmine-terminal/command/projects
+                      lib/redmine-terminal/command/users
                      ]
   s.executables    = ['rmine']
   s.requirements   = %w[
