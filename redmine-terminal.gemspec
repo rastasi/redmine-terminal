@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name           = 'redmine-terminal'
-  s.version        = '0.2.0'
+  s.version        = '0.3.0'
   s.licenses       = ['GPL v2']
   s.description    = 'Terminal based client for Redmine'
   s.summary        = 'Terminal based client for Redmine'
