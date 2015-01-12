@@ -12,7 +12,7 @@ module RedmineTerminal
     end
 
     def self.list
-      @@commands.keys
+      @@commands
     end
 
   end
