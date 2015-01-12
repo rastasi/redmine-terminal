@@ -11,6 +11,12 @@ module RedmineTerminal
     new_config.puts 'user: john'
     new_config.puts 'password: secret'
     new_config.close
+    puts ''
+    puts '----------'
+    puts 'Configure your connection data here: '+config_file
+    puts '----------'
+    puts ''
+    exit
   end
 
   config = YAML.load_file(config_file)
