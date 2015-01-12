@@ -11,9 +11,10 @@ RedmineTerminal::Command.new :issues do
 
   issues['issues'].each do |issue|
     line = []
+    line.push "#"+issue['id'].to_s
     line.push issue['project']['name']
     line.push issue['subject']
-    line.push issue['assigned_to']['name'] if ARGV[0 ] != 'me'
+    line.push issue['assigned_to']['name'] if ARGV[1] != 'me'
     lines.push line
   end
 

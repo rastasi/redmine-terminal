@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 require_relative '../lib/redmine-terminal'
-if ARGV[0] and RedmineTerminal::Command.list.has_key?(ARGV[0])
+if ARGV[0]# and RedmineTerminal::Command.list.has_key?(ARGV[0])
   RedmineTerminal::Command.run! ARGV[0].to_sym
 else
   puts 'Commands:'

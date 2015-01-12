@@ -7,4 +7,5 @@ module RedmineTerminal
     require_relative 'redmine-terminal/config'
     require_relative 'redmine-terminal/command'
     require_relative 'redmine-terminal/command/issues'
+    require_relative 'redmine-terminal/command/projects'
 end

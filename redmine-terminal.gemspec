@@ -8,11 +8,17 @@ Gem::Specification.new do |s|
   s.email          = 'tasi@syrakuza.hu'
   s.require_paths  = ['lib']
   s.files          = %w[
-                      lib/redmine-terminal.rb
-                      lib/redmine-terminal/config.rb
-                      lib/redmine-terminal/command.rb
-                      lib/redmine-terminal/command/issues.rb
+                      lib/redmine-terminal
+                      lib/redmine-terminal/config
+                      lib/redmine-terminal/command
+                      lib/redmine-terminal/command/issues
+                      lib/redmine-terminal/command/projects
                      ]
   s.executables    = ['rmine']
-  s.requirements   = ['json', 'rest-client', 'terminal-table', 'yaml']
+  s.requirements   = %w[
+                        'json'
+                        'rest-client'
+                        'terminal-table'
+                        'yaml'
+                    ]
 end
