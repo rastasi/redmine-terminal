@@ -1,3 +1,9 @@
 #!/usr/bin/env ruby
-
-require_relative '../lib/redmine-terminal.rb'
+require_relative '../lib/redmine-terminal'
+if ARGV[0]
+  RedmineTerminal::Command.run! ARGV[0].to_sym
+else
+  RedmineTerminal::Command.list.each do |command|
+    puts command
+  end
+end
