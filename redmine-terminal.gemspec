@@ -1,11 +1,11 @@
 Gem::Specification.new do |s|
   s.name           = 'redmine-terminal'
-  s.version        = '0.3.0'
+  s.version        = '0.4.0'
   s.licenses       = ['GPL v2']
   s.description    = 'Terminal based client for Redmine'
   s.summary        = 'Terminal based client for Redmine'
   s.authors        = ['Zsolt Tasnadi']
-  s.email          = 'tasi@syrakuza.hu'
+  s.email          = 'rastasi@gmail.com'
   s.require_paths  = ['lib']
   s.files          = %w[
                       lib/redmine-terminal.rb
